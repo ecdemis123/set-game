@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "test": "mocha",
+    "test": "mocha --compilers js:babel-core/register ./**/*.spec.js*",
     "fixit": "eslint --fix server/"
   },
   "lint-staged": {
@@ -37,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.4",
-    "mocha": "^5.0.5"
+    "mocha": "^5.0.5",
+    "node-mocks-http": "^1.5.8"
   }
 }

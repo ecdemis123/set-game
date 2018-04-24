@@ -1,9 +1,9 @@
-import Card from '../models/Card';
+import { getDeck } from '../lib/library';
 
 module.exports = {
-  getGame: (req, res) => {
-    const card = new Card('blue', 'diamond', 1, 'solid');
-    res.json({ card });
+  getDeck: (req, res) => {
+    const deck = getDeck();
+    res.json({ deck });
     // await the creation of the randomized deck
     // if there is no error return the cards, else return an error
   },
