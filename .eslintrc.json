@@ -1,6 +1,13 @@
 {
   "extends": "airbnb",
   "rules": {
-    "no-unused-vars": ["error", { "argsIgnorePattern": "req" }]
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req" }],
+    "arrow-parens": "off",
+    "no-underscore-dangle": "off",
+    "prefer-destructuring": "off"
+  },
+  "env": {
+    "mocha": true,
+    "node": true
   }
 }
